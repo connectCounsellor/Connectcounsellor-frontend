@@ -204,7 +204,7 @@ const CourseInfo = () => {
     <div className="course-details-by-id-inner-container">
       <div className="course-details-by-id-flex-container1">
       <div className="course-image">
-  {course.youtubeLink ? (
+  {(enrolled || course.price===0)? (
     <iframe
     id="course-video"
       src={course.youtubeLink.replace("watch?v=", "embed/")}
@@ -213,7 +213,7 @@ const CourseInfo = () => {
       allowFullScreen
     ></iframe>
   ) : (
-    <img src={course.image} alt={course.name} />
+    <img id="course-img-photo" src={course.image} alt={course.name} />
   )}
 </div>
         <div className="course-details-by-id-flex">

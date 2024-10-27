@@ -55,6 +55,11 @@
 #topic-icon {
   color: #0096ff;
 }
+#course-img-photo{
+  width: 100%;
+  border-radius: 20px;
+  height: 400px;
+}
 .course-details-by-id-flex-inner1-container2 p {
   margin-top: 5px;
 }
